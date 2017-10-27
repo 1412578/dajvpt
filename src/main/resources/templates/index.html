@@ -6,8 +6,60 @@
 </head>
 <body>
 <div th:fragment="content">
-    Website đặt món ăn
-    <p>Hiện đã có <span th:text="${access_count}"></span> người truy cập</p>
+        <div class="container home-content">
+            <div class="banner">
+                <div th:include="fragments/banner :: banner"></div>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#newfoods-tab" role="tab">Món mới</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#favoritefoods-tab" role="tab">Món yêu thích</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="newfoods-tab" role="tabpanel">
+                    <div class="newfoods">
+                        <div th:include="fragments/newfoods :: newfoods"></div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="favoritefoods-tab" role="tabpanel">
+                    <div class="favoritefoods">
+                        <div th:include="fragments/favoritefoods :: favoritefoods"></div>
+                    </div>
+                </div>
+            </div>
+            <h3>Danh sách món ăn</h3>
+            <div class="box">
+                <div class="standout"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="box">
+                <div class="standout"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+            <div class="box">
+                <div class="standout"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </div>
 </div>
 </body>
 </html>

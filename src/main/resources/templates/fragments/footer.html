@@ -5,6 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-    <div th:fragment="footer">this is footer <span th:text="${accessCount}">Test</span></div>
+    <div th:fragment="footer">
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">Copyright &#9400; 2017 GroupN2</span>
+
+                <!--<p>Hiện đã có <span th:text="${access_count}"></span> người truy cập</p>-->
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

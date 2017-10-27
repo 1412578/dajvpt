@@ -1,6 +1,6 @@
 ----------------------------------------------------------------
-Fri Oct 27 00:15:55 ICT 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015f-59ae-e5e5-00000c7d63f8 
+Fri Oct 27 20:59:55 ICT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.13.1.1 - (1765088): instance a816c00e-015f-5e21-cf71-00000785e118 
 on database directory memory:C:\Users\tranq\Documents\BaiTap\JavaPhanTan\DoAn\foodmart\testdb with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
 Loaded from file:/C:/Users/tranq/.m2/repository/org/apache/derby/derby/10.13.1.1/derby-10.13.1.1.jar
 java.vendor=Oracle Corporation
