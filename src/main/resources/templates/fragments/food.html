@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>food</title>
+</head>
+<body>
+<div th:fragment="food(img, title, price)">
+        <div><img th:src="${img}"/>
+            <div class="title" th:text="${title}">Bún bò huế</div>
+            <div class="price" th:text="${price}">25.000 VNĐ</div>
+        </div>
+</div>
+</body>
+</html>
