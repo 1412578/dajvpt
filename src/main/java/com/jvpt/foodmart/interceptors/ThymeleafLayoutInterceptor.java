@@ -23,8 +23,8 @@ public class ThymeleafLayoutInterceptor extends HandlerInterceptorAdapter {
             return;
 
         Map<String, Object> model = modelAndView.getModel();
-        modelAndView.setViewName(model.get("layout")!=null
-                ? "layouts/".concat(model.get("layout").toString())
+        modelAndView.setViewName(model.get("view_layout")!=null
+                ? "layouts/".concat(model.get("view_layout").toString())
                 : "layouts/default");
         modelAndView.addObject("view_template", viewName);
 
