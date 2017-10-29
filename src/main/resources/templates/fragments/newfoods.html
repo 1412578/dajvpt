@@ -7,26 +7,11 @@
 <body>
 <div th:fragment="newfoods">
     <div class="owl-carousel owl-theme">
-        <div><img src="https://i.imgur.com/Sy7oQjo.gif"/>
-            <div class="title">Thịt heo hầm</div>
-            <div class="title">20.000 VNĐ</div>
-        </div>
-        <div><img src="https://i.imgur.com/bBtqMHE.gif"/>
-            <div class="title">Lợp xưởng nước</div>
-            <div class="title">45.000 VNĐ</div>
-        </div>
-        <div><img src="https://i.imgur.com/rcDBZk0.gif"/>
-            <div class="title">Gà xào đậu hà lan</div>
-            <div class="title">68.000 VNĐ</div>
-        </div>
-        <div><img src="https://i.imgur.com/zV8WrlT.gif"/>
-            <div class="title">Thịt heo hầm</div>
-            <div class="title">20.000 VNĐ</div>
-        </div>
-        <div><img src="https://i.imgur.com/rWDdmKq.gif"/>
-            <div class="title">Thịt heo hầm</div>
-            <div class="title">20.000 VNĐ</div>
-        </div>
+        <div th:include="fragments/food :: food('https://i.imgur.com/Sy7oQjo.gif', 'Mì hải sản', '40.000 VNĐ')"></div>
+        <div th:include="fragments/food :: food('https://i.imgur.com/bBtqMHE.gif', 'Phở bò', '60.000 VNĐ')"></div>
+        <div th:include="fragments/food :: food('https://i.imgur.com/rcDBZk0.gif', 'Bạch tuộc cuộn', '85.000 VNĐ')"></div>
+        <div th:include="fragments/food :: food('https://i.imgur.com/zV8WrlT.gif', 'Cơm xào mực', '140.000 VNĐ')"></div>
+        <div th:include="fragments/food :: food('https://i.imgur.com/rWDdmKq.gif', 'Bánh canh cá lóc', '55.000 VNĐ')"></div>
     </div>
 </div>
 </body>

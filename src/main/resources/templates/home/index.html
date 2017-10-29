@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Trang chủ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div th:fragment="content">
+        <div class="container home-content">
+            <div class="banner">
+                <div th:include="fragments/banner :: banner"></div>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#newfoods-tab" role="tab">Món mới</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#favoritefoods-tab" role="tab">Món yêu thích</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="newfoods-tab" role="tabpanel">
+                    <div class="newfoods">
+                        <div th:include="fragments/newfoods :: newfoods"></div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="favoritefoods-tab" role="tabpanel">
+                    <div class="favoritefoods">
+                        <div th:include="fragments/favoritefoods :: favoritefoods"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-title">Thực đơn</div>
+            <!--<div class="box">
+                <div class="standout"></div>
+                <div class="list-food">
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/Sy7oQjo.gif', 'Mì hải sản', '40.000 VNĐ')"></div>
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/bBtqMHE.gif', 'Phở bò', '60.000 VNĐ')"></div>
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/rcDBZk0.gif', 'Bạch tuộc cuộn', '85.000 VNĐ')"></div>
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/zV8WrlT.gif', 'Cơm xào mực', '140.000 VNĐ')"></div>
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/rWDdmKq.gif', 'Bánh canh cá lóc', '55.000 VNĐ')"></div>
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/bBtqMHE.gif', 'Phở bò', '60.000 VNĐ')"></div>
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/rcDBZk0.gif', 'Bạch tuộc cuộn', '85.000 VNĐ')"></div>
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/zV8WrlT.gif', 'Cơm xào mực', '140.000 VNĐ')"></div>
+                <div class="food" th:include="fragments/food :: food('https://i.imgur.com/rWDdmKq.gif', 'Bánh canh cá lóc', '55.000 VNĐ')"></div>
+                </div>
+            </div>-->
+        </div>
+</div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.jvpt.foodmart.model;
+package com.jvpt.foodmart.models;
 
 import org.springframework.stereotype.Component;
 

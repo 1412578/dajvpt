@@ -1,9 +1,10 @@
-package com.jvpt.foodmart.interceptor;
+package com.jvpt.foodmart.interceptors;
 
-import com.jvpt.foodmart.service.AccessStatisticalService;
+import com.jvpt.foodmart.services.AccessStatisticalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.View;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +21,10 @@ public class AccessCountInterceptor extends HandlerInterceptorAdapter {
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws java.lang.Exception {
         if (modelAndView == null || !modelAndView.hasView())
             return;
+        String view = modelAndView.getViewName();
+
         accessStatisticalService.upAccess();
-        modelAndView.addObject("access_count", accessStatisticalService.getAccessCount());
+        if (!view.startsWith("redirect:") && !view.startsWith("forward:"))
+            modelAndView.addObject("access_count", accessStatisticalService.getAccessCount());
     }
 }

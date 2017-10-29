@@ -1,15 +1,14 @@
-package com.jvpt.foodmart.config;
+package com.jvpt.foodmart.configurations;
 
-import com.jvpt.foodmart.interceptor.AccessCountInterceptor;
-import com.jvpt.foodmart.interceptor.ThymeleafLayoutInterceptor;
+import com.jvpt.foodmart.interceptors.AccessCountInterceptor;
+import com.jvpt.foodmart.interceptors.ThymeleafLayoutInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
-public class InterceptorConfig extends WebMvcConfigurerAdapter {
+public class InterceptorConfiguration extends WebMvcConfigurerAdapter {
     private AccessCountInterceptor accessCountInterceptor;
     private ThymeleafLayoutInterceptor thymeleafLayoutInterceptor;
     @Autowired

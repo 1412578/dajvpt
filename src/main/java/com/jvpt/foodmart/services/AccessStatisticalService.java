@@ -1,7 +1,7 @@
-package com.jvpt.foodmart.service;
+package com.jvpt.foodmart.services;
 
 
-import com.jvpt.foodmart.model.AccessModel;
+import com.jvpt.foodmart.models.AccessModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

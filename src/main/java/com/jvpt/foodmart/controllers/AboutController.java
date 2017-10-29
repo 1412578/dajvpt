@@ -1,15 +1,14 @@
-package com.jvpt.foodmart.controller;
+package com.jvpt.foodmart.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
+@RequestMapping("/about")
 public class AboutController {
-    @RequestMapping("/about")
+    @RequestMapping({"", "/", "index"})
     public String index(){
-
-        return "about";
+        return "about/index";
     }
 
 }
