@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+
+    <div th:fragment="header">
+        <div class="w3layouts-header-top">
+            <div class="w3-header-top-grids">
+                <div class="w3-header-top-left">
+                    <p><i class="fa fa-volume-control-phone" aria-hidden="true"></i> +1 234 567 8901</p>
+                </div>
+                <div class="w3-header-top-right">
+                    <div class="agileinfo-social-grids">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="w3-header-top-right-text">
+                        <p><i class="fa fa-home" aria-hidden="true"></i> 1st Street , mexico city</p>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="head">
+            <div class="head-nav-grids">
+                <div class="navbar-top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand logo ">
+                            <h1><a href="index.html">Food <span>Club</span></a></h1>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav link-effect-4">
+                            <li class="active"><a th:href="@{\home}" href="#" data-hover="Home">Trang chủ</a> </li>
+                            <li><a th:href="@{\gallery}" href="#"  data-hover="Gallery">Món ăn</a></li>
+                            <li><a th:href="@{\branches}" href="#"  data-hover="Gallery">Chi nhánh</a></li>
+                            <li><a th:href="@{\about}" href="#" data-hover="About">Giới thiệu</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-left">
+                    <ul>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:info@example.com">@example.com</a></li>
+                        <li><i class="fa fa-fax" aria-hidden="true"></i> +1234 567 892</li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import "misc/mixin";
+.carousel-item{
+  height: 450px;
+  overflow: hidden;
+}
+.banner{
+  margin-bottom: 50px;
+}
+
+.home-content{
+  min-height: 2000px;
+}
+
+/* Override tab pane behavior */
+.tab-content {
+  margin-bottom: 20px;
+  .tab-pane{
+    display: block !important;
+    &:not(.active) {
+      opacity: 0;
+      height: 0;
+      overflow-y: hidden;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+}
+.nav-tabs {
+  .nav-link {
+    border: 0;
+    border-radius: 0;
+    background-color: white;
+    @include transition(background-color 0.1s ease-out);
+    color: black;
+    &.active {
+      color: white;
+      background-color: #ff5b00;
+    }
+  }
+}
+.box{
+  font-size: 0;
+  .standout{
+    display: inline-block;
+    height: 450px;
+    width: 15%;
+    font-size: 0;
+    background-color: gray;
+    vertical-align: top;
+  }
+  .list-food {
+    width: 85%;
+    display: inline-block;
+    vertical-align: top;
+    .food {
+      display: inline-block;
+    }
+  }
+}
+.menu-title{
+  font-size: 1rem;
+}
