@@ -14,5 +14,3 @@
 - Giỏ hàng
 - Lịch sử đơn hàng
 - Tìm kiếm món ăn
-
-# This is test message
